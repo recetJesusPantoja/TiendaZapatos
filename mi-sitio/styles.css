@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Navigation Bar */
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Shoe Categories */
+.category {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.shoe-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .category {
+        width: 95%;
+    }
+}
+/* Botón de compra mejorado */
+button {
+    background: linear-gradient(45deg, #ff6600, #ff3300);
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+    background: linear-gradient(45deg, #ff4500, #cc2900);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto al presionar */
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo de los títulos de sección */
+.titulo-seccion {
+    background: linear-gradient(45deg, #ff6600, #ff3300);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Efecto hover */
+.titulo-seccion:hover {
+    background: linear-gradient(45deg, #ff4500, #cc2900);
+    transform: scale(1.05);
+}
+
+/* Línea decorativa debajo del título */
+.titulo-seccion h2 {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.titulo-seccion h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: white;
+    margin: 5px auto;
+    transition: width 0.3s;
+}
+
+.titulo-seccion:hover h2::after {
+    width: 80px;
+}
+
+/* Ocultar el contenido por defecto */
+.contenido-seccion {
+    display: none;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Animación de apertura */
+.contenido-seccion.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Efecto de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ajuste para que los títulos no queden cortados */
+.categoria {
+    padding-top: 100px;
+    scroll-margin-top: 100px;
+}
+

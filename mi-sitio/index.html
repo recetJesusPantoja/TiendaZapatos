@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Compra los mejores sneakers, botas y sandalias en nuestra tienda online.">
+    <title>Tienda de Zapatos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header>
+        <h1>Tienda de Zapatos</h1>
+        <nav>
+            <ul>
+                <li><a href="#sneakers">Sneakers</a></li>
+                <li><a href="#boots">Botas</a></li>
+                <li><a href="#sandals">Sandalias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Tienda de Zapatos</h1>
+    <nav>
+        <ul>
+            <li><a href="#sneakers" class="scroll-link">Sneakers</a></li>
+            <li><a href="#boots" class="scroll-link">Botas</a></li>
+            <li><a href="#sandals" class="scroll-link">Sandalias</a></li>
+            <li><a href="#contacto" class="scroll-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+<section id="about" class="about">
+    <div class="about-content">
+        <img src="images/creador.jpg" alt="Foto del Creador">
+        <div class="about-text">
+            <h2>Sobre el Creador</h2>
+            <p>¡Hola! Soy Jesús David Pantoja Gonzalez, el creador de esta tienda de zapatos. Estoy en el programa Ingenieria de Software. Este es mi trabajo de mi pagina web.</p>
+            <p>A continuacion les muestro los productos!</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Sección de Sneakers -->
+       <section id="sneakers" class="categoria">
+    <div class="titulo-seccion" onclick="toggleSeccion('sneakers-content')">
+        <h2>Sneakers</h2>
+    </div>
+    <div id="sneakers-content" class="contenido-seccion">
+        <div class="productos">
+            <div class="producto">
+                <img src="images/sneaker1.jpg" alt="Sneaker Negro">
+                <h3>Sneaker Negro</h3>
+                <p>Zapato deportivo cómodo y moderno.</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="images/sneaker2.jpg" alt="Sneaker Blanco">
+                <h3>Sneaker Blanco</h3>
+                <p>Perfecto para cualquier ocasión.</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="boots" class="categoria">
+    <div class="titulo-seccion" onclick="toggleSeccion('boots-content')">
+        <h2>Botas</h2>
+    </div>
+    <div id="boots-content" class="contenido-seccion">
+        <div class="productos">
+            <div class="producto">
+                <img src="images/boots1.jpg" alt="Bota de Cuero">
+                <h3>Bota de Cuero</h3>
+                <p>Durabilidad y estilo en un solo diseño.</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="images/boots2.jpg" alt="Bota Impermeable">
+                <h3>Bota Impermeable</h3>
+                <p>Ideal para climas extremos.</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sandals" class="categoria">
+    <div class="titulo-seccion" onclick="toggleSeccion('sandals-content')">
+        <h2>Sandalias</h2>
+    </div>
+    <div id="sandals-content" class="contenido-seccion">
+        <div class="productos">
+            <div class="producto">
+                <img src="images/sandals1.jpg" alt="Sandalia Casual">
+                <h3>Sandalia Casual</h3>
+                <p>Comodidad y frescura para el verano.</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="images/sandals2.jpg" alt="Sandalia de Playa">
+                <h3>Sandalia de Playa</h3>
+                <p>Resistente al agua y ligera.</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <p>Email: jesus.pantoja@campusucc.edu.co</p>
+        <p>&copy; 2025 Tienda de Zapatos. Todos los derechos reservados.</p>
+    </footer>
+
+<script>
+function toggleSeccion(id) {
+    let contenido = document.getElementById(id);
+    if (contenido.classList.contains("active")) {
+        contenido.classList.remove("active");
+    } else {
+        contenido.classList.add("active");
+    }
+}
+
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
